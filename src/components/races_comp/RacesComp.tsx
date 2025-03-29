@@ -101,7 +101,7 @@ export default function RacesComp() {
 							time_start={race.time_start}
 							time_end={race.time_end}
 							cost={race.cost}
-							race_id={0}
+							race_id={race.id}
 							/>
 					))}
 					<ReactPaginate
