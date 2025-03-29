@@ -1,0 +1,152 @@
+.comp {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	min-height: 90vh;
+	background-color: #f4f4f4;
+	align-items: center;
+	padding: 20px;
+}
+
+.cont {
+	width: 100%;
+	max-width: 1000px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.createLink {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #007bff;
+	text-decoration: none;
+}
+
+.createLink:hover {
+	text-decoration: underline;
+}
+
+.table {
+	width: 100%;
+	table-layout: auto;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+	padding: 12px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+.table th {
+	width: 50%;
+	background-color: #f1f1f1;
+	font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+	background-color: #f4f4f4;
+}
+
+.table tr:hover {
+	background-color: #dcdcdc;
+}
+
+.table td {
+	font-size: 16px;
+}
+
+.editLink {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.editLink:hover {
+	text-decoration: underline;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.pageBtn {
+	padding: 10px 20px;
+	margin: 0 10px;
+	background-color: rgb(249, 37, 63);
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.pageBtn:hover {
+	background-color: rgb(200, 30, 50);
+}
+
+.pageBtn:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+/* Мобильный адаптивный стиль */
+@media only screen and (max-width: 766px) {
+	.cont {
+		padding: 15px;
+		margin-top: 20px;
+	}
+
+	.title {
+		font-size: 20px;
+	}
+
+	.createLink {
+		font-size: 14px;
+	}
+
+	.table {
+		width: 100%;
+		display: block;
+	}
+
+	.table th,
+	.table td {
+		display: block;
+		width: 100%;
+		font-size: 14px;
+		padding: 8px;
+		border: 1px solid #ddd;
+		box-sizing: border-box;
+	}
+
+	.table th {
+		background-color: #f1f1f1;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+
+	.table tr {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.pageBtn {
+		font-size: 14px;
+		padding: 8px 16px;
+	}
+}
